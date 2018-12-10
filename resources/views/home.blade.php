@@ -1,14 +1,14 @@
 <div class="homepage-splash">
     <div class="nav">
         <div class="logo col-md-4 col-sm-4 nopad">
-            <img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" class="img-fluid">
+            <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" class="img-fluid"></a>
         </div>
         <div class="col-md-8 col-sm-8 nopad">
-            <ul class="list-unstyled list-inline float-right nav-links">
-                <li class="list-inline-item">ITEMS AVAILABLE</li>
-                <li class="list-inline-item">GIVEAWAY AN ITEM</li>
-                <li class="list-inline-item">FREEVO STORIES</li>
-                <li class="list-inline-item">HELP</li>
+            <ul class="list-unstyled list-inline float-right">
+                <li class="list-inline-item"><a href="{{ BASE_URL }}listing">ITEMS AVAILABLE</a></li>
+                <li class="list-inline-item"><a href="{{ BASE_URL }}giveaway">GIVEAWAY AN ITEM</a></li>
+                <li class="list-inline-item"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
+                <li class="list-inline-item"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="list-inline-item">SIGN UP</li>
                 <li class="list-inline-item">LOGIN</li>
             </ul>
@@ -28,7 +28,7 @@
     <div class="clearfix"></div>
     <div class="row">
         <?php for($i = 0; $i < 5; $i++) {?>
-        <div class="col-6 col-sm-2 col-md-2 f-stories <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>" data-toggle="modal" data-target="#story-modal">
+        <div class="col-6 col-sm-2 col-md-2 f-stories pointer <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>" data-toggle="modal" data-target="#story-modal">
             <img src="{{ BASE_URL }}assets/images/stories/{{ $i+1 }}.png" class="img-fluid">
             <div class="pin {{ ['pink', 'blue', 'orange'][rand(0, 2)] }}"></div>
             <p class="story-desc">Blessed away Queen Size Beds & 2-seater Sofa</p>
@@ -37,7 +37,9 @@
         </div>
         <?php } ?>
     </div>
-    <p class="text-center more"><small>READ MORE STORIES ></small></p>
+    <p class="text-center more font-12">
+        <a href="{{ BASE_URL }}stories">READ MORE STORIES ></a>
+    </p>
 </div>
 <div class="f-section-wrap bg-grey">
     <h2 class="sec-title text-center">Old is New</h2>
@@ -47,29 +49,35 @@
         <?php for($i = 0; $i < 5; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 f-stories <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>">
             <div class="f-item">
-                <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
+                <a href="{{ BASE_URL }}single">
+                    <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
+                </a>
                 <div class="add-to-wishlist">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
                 </div>
                 <div class="desc">
-                    <p class="title">Table Lamp</p>
-                    <span class="location">Aish, Giver</span>
-                    <button class="btn">I AM INTERESTED</button>
-                    <table class="table owner">
-                        <tr>
-                            <td class="nopad owner-avatar">
-                                <img src="{{ BASE_URL }}assets/images/item-owner.png">
-                            </td>
-                            <td class="font-12">
-                                Apnavi Pareek<br/>56 mins ago
-                            </td>
-                            <td class="nopad text-center">
-                                <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
-                                <div class="clearfix"></div>
-                                <div class="font-12">53</div>
-                            </td>
-                        </tr>
-                    </table>
+                    <a href="{{ BASE_URL }}single">
+                        <p class="title">Table Lamp</p>
+                        <span class="location">Aish, Giver</span>
+                        <button class="btn">I AM INTERESTED</button>
+                    </a>
+                    <a href="{{ BASE_URL }}profile/ranjan">
+                        <table class="table owner">
+                            <tr>
+                                <td class="nopad owner-avatar">
+                                    <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                                </td>
+                                <td class="font-12">
+                                    Apnavi Pareek<br/>56 mins ago
+                                </td>
+                                <td class="nopad text-center">
+                                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
+                                    <div class="clearfix"></div>
+                                    <div class="font-12">53</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
                 </div>
             </div>
         </div>

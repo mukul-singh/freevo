@@ -47,29 +47,35 @@
             <?php for($i = 0; $i < 28; $i++) {?>
             <div class="col-6 col-sm-3 col-md-3 pad-r0">
                 <div class="f-item">
-                    <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
+                    <a href="{{ BASE_URL }}single">
+                        <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
+                    </a>
                     <div class="add-to-wishlist">
                         <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
                     </div>
                     <div class="desc">
-                        <p class="title">Table Lamp</p>
-                        <span class="location">Aish, Giver</span>
-                        <button class="btn">I AM INTERESTED</button>
-                        <table class="table owner">
-                            <tr>
-                                <td class="nopad owner-avatar">
-                                    <img src="{{ BASE_URL }}assets/images/item-owner.png">
-                                </td>
-                                <td class="font-12">
-                                    Apnavi Pareek<br/>56 mins ago
-                                </td>
-                                <td class="nopad text-center">
-                                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
-                                    <div class="clearfix"></div>
-                                    <div class="font-12">53</div>
-                                </td>
-                            </tr>
-                        </table>
+                        <a href="{{ BASE_URL }}single">
+                            <p class="title">Table Lamp</p>
+                            <span class="location">Aish, Giver</span>
+                            <button class="btn">I AM INTERESTED</button>
+                        </a>
+                        <a href="{{ BASE_URL }}profile/ranjan">
+                            <table class="table owner">
+                                <tr>
+                                    <td class="nopad owner-avatar">
+                                        <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                                    </td>
+                                    <td class="font-12">
+                                        Apnavi Pareek<br/>56 mins ago
+                                    </td>
+                                    <td class="nopad text-center">
+                                        <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
+                                        <div class="clearfix"></div>
+                                        <div class="font-12">53</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
                     </div>
                 </div>
             </div>
