@@ -1,3 +1,8 @@
+@media (min-width: 576px) {
+    .modal-sm {
+        max-width: 400px;
+    }
+}
 .nopad {
     padding: 0 !important
 }
@@ -24,6 +29,9 @@
 }
 .mar-b15 {
     margin-bottom: 15px;
+}
+.mar-b20 {
+    margin-bottom: 20px;
 }
 .line-ht15 {
     line-height: 1.5;
@@ -241,6 +249,9 @@ table.owner td {
 .f-heading-sm {
     font-size: 18px;
 }
+.f-heading-xs {
+    font-size: 16px;
+}
 .f-works p {
     font-weight: 300;
     margin: 2px 0 40px 0;
@@ -267,6 +278,10 @@ table.owner td {
     background: #108aae;
     color: #fff;
     border: none;
+}
+.btn.danger {
+    border-color: #f8090e;
+    color: #f50812;
 }
 .btn img {
     margin-right: 5px;
@@ -423,4 +438,13 @@ ul.breadcrumb li {
 }
 .progress-pin.float-right {
     right: 0;
+}
+#cancel-item-modal .modal-body {
+    padding: 30px 40px;
+}
+#cancel-item-modal h3 {
+    margin: 10px 0 15px 0;
+}
+#cancel-item-modal img.close {
+    margin: -10px -20px 0 0;
 }

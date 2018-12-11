@@ -95,7 +95,25 @@
             </div>
         </div>
         <br/>
-        <button class="btn float-right">Cancel</button>
+        <button class="btn float-right" data-toggle="modal" data-target="#cancel-item-modal">Cancel</button>
         <button class="btn float-right">Edit Item</button>
+    </div>
+</div>
+<div class="modal" id="cancel-item-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="14" class="float-right close">
+                <b class="f-heading-xs">CANCEL THIS GIVEAWAY?</b>
+                <h3 class="f-heading-sm">Super Single Bed King</h3>
+                <p>
+                    Are you sure you want to cancel this request? This request will be deleted immediately.
+                    You can't undo this action
+                </p>
+                <br/>
+                <button class="btn mar-r5">Don't Cancel</button>
+                <button class="btn danger">Yes, Cancel it</button>
+            </div>
+        </div>
     </div>
 </div>

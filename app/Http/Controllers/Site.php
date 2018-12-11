@@ -24,7 +24,7 @@ class Site extends Controller
 
     public function single() {
         $title = "Freevo - Super Single Bed";
-        $description = "Freev0 - Super Single Bed";
+        $description = "Freevo - Super Single Bed";
         echo view('header', ['title' => $title, 'description' => $description]);
         echo view('nav');
         echo view('single');
@@ -33,7 +33,7 @@ class Site extends Controller
 
     public function stories() {
         $title = "Freevo - Stories";
-        $description = "Freev0 - Stories";
+        $description = "Freevo - Stories";
         echo view('header', ['title' => $title, 'description' => $description]);
         echo view('nav');
         echo view('stories');
@@ -41,17 +41,29 @@ class Site extends Controller
     }
 
     public function profile() {
-        $title = "Freevo - Profile";
-        $description = "Freev0 - Profile";
-        echo view('header', ['title' => $title, 'description' => $description]);
+        $section = strtolower(\Request::get('section'));
+        $title = "Freevo - My ".ucwords($section);
+        $sectionTitle = [
+            'info'      => 'Personal Information',
+            'giveaway'  => 'My Giveaway',
+            'requested' => 'Requested Items',
+            'wishlist'  => 'My Wishlist',
+            'addresses' => 'Manage Address',
+            'feedbacks' => 'Feedbacks',
+            'help'      => 'Help Center',
+            'faq'       => 'FAQs',
+            'deactivate'=> 'Deactivate Account'
+
+        ];
+        echo view('header', ['title' => $title, 'description' => $title]);
         echo view('nav');
-        echo view('profile');
+        echo view('profile.'.$section, ['section' => $section, 'sectionTitle' => $sectionTitle[$section]]);
         return view('footer');
     }
 
     public function userProfile() {
         $title = "Freevo - Ranjan's Profile";
-        $description = "Freev0 - Ranjan's Profile";
+        $description = "Freevo - Ranjan's Profile";
         echo view('header', ['title' => $title, 'description' => $description]);
         echo view('nav');
         echo view('userProfile');
@@ -60,7 +72,7 @@ class Site extends Controller
 
     public function giveaway() {
         $title = "Freevo - Giveaway Details";
-        $description = "Freev0 - Giveaway Details";
+        $description = "Freevo - Giveaway Details";
         echo view('header', ['title' => $title, 'description' => $description]);
         echo view('nav');
         echo view('giveaway');
