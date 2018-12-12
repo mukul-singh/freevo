@@ -16,5 +16,5 @@ Route::get('/listing', 'Site@listing');
 Route::get('/single', 'Site@single');
 Route::get('/stories', 'Site@stories');
 Route::get('/profile', 'Site@profile');
-Route::get('/profile/ranjan', 'Site@userProfile');
+Route::get('/profile/{username}', 'Site@userProfile');
 Route::get('/giveaway', 'Site@giveaway');

@@ -47,7 +47,16 @@
                     Are you sure you want to cancel this request? This request will be deleted immediately.
                     You can't undo this action
                 </p>
-                <br/>
+                <table class="owner mar-b20">
+                    <tr>
+                        <td class="nopad owner-avatar">
+                            <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                        </td>
+                        <td class="font-12 pad-l15">
+                            Apnavi Pareek<br/>56 mins ago
+                        </td>
+                    </tr>
+                </table>
                 <button class="btn mar-r5">Don't Delete</button>
                 <button class="btn danger">Yes, Delete it</button>
             </div>

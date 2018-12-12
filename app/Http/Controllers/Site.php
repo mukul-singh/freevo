@@ -58,19 +58,30 @@ class Site extends Controller
             'deactivate'=> 'Deactivate Account'
 
         ];
-        $title = $sectionTitle[$section];
+        $title = 'Freevo - '.$sectionTitle[$section];
         echo view('header', ['title' => $title, 'description' => $title]);
         echo view('nav');
         echo view('profile.'.$section, ['section' => $section, 'sectionTitle' => $sectionTitle[$section]]);
         return view('footer');
     }
 
-    public function userProfile() {
-        $title = "Freevo - Ranjan's Profile";
-        $description = "Freevo - Ranjan's Profile";
-        echo view('header', ['title' => $title, 'description' => $description]);
+    public function userProfile($username) {
+        $section = strtolower(\Request::get('section'));
+        if($section == '') {
+            // Go to personal information page by default
+            $section = 'feedbacks';
+        }
+        $sectionTitle = [
+            'giveaway'  => 'Giveaways',
+            'requested' => 'Items Taken',
+            'wishlist'  => 'His Wishlist',
+            'feedbacks' => 'His Feedbacks',
+
+        ];
+        $title = 'Freevo - User - '.$sectionTitle[$section];
+        echo view('header', ['title' => $title, 'description' => $title]);
         echo view('nav');
-        echo view('userProfile');
+        echo view('userProfile.'.$section, ['username' => ucwords($username), 'section' => $section, 'sectionTitle' => $sectionTitle[$section]]);
         return view('footer');
     }
 

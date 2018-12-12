@@ -5,49 +5,57 @@
             <li>></li>
             <li>Community</li>
             <li>></li>
-            <li>Ranjan Thangjam</li>
+            <li>{{ $username }}</li>
         </ul>
     </div>
     <div class="col-3 nopad">
-        <h3 class="f-heading">Ranjan</h3>
+        <h3 class="f-heading">{{ $username }}</h3>
     </div>
     <div class="col-9 pad-r0">
-        <h3 class="f-heading-sm">His Wishlist</h3>
+        <h3 class="f-heading-sm">{{ $sectionTitle }}</h3>
     </div>
     <div class="col-3 nopad">
         <div class="list-filter">
             <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid avatar">
             <ul class="list-unstyled">
-                <li>Feedbacks</li>
+                <li {{ ($section == 'feedbacks') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=feedbacks">Feedbacks</a></li>
                 <li class="sub">Given</li>
                 <li class="sub">Received</li>
-                <li>Giveaways (4)</li>
-                <li>Items Taken (0)</li>
-                <li class="active">His Wishlist (5)</li>
+                <li {{ ($section == 'giveaway') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=giveaway">Giveaways (4)</a></li>
+                <li {{ ($section == 'requested') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=requested">Items Taken (2)</a></li>
+                <li {{ ($section == 'wishlist') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=wishlist">His Wishlist (5)</a></li>
             </ul>
         </div>
     </div>
     <div class="col-9 pad-r0">
-        <?php for($i = 0; $i < 5; $i++) {?>
-        <div class="col-12 row box-wrap {{ ($i < 2) ? 'bg-white' : 'disabled' }}">
-            <div class="col-3 pad-l0">
-                <img src="{{ BASE_URL }}assets/images/single1.png" class="img-fluid">
-            </div>
-            <div class="col-9 font-12 pad-r0">
+        @section('content')
+        @show
+    </div>
+</div>
+<div class="modal" id="cancel-item-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="14" class="float-right close">
+                <b class="f-heading-xs">DELETE THIS ITEM?</b>
                 <h3 class="f-heading-sm">Super Single Bed King</h3>
-                <div class="mar-v10">POSTED ON 10/10/2018</div>
-                <div class="row col">
-                    <div class="line-ht15 col-9 nopad">
-                        <b>ITEM PICKUP DATE</b> :  03 June 2019<br/>
-                        <b>SELECTED TIME SLOT</b> :  Morning<br/>
-                        <b>DELIVERY METHOD</b> : Local Movers
-                    </div>
-                    <div class="col-3 text-right pad-r0">
-                        <button class="btn">View</button>
-                    </div>
-                </div>
+                <p>
+                    Are you sure you want to cancel this request? This request will be deleted immediately.
+                    You can't undo this action
+                </p>
+                <table class="owner mar-b20">
+                    <tr>
+                        <td class="nopad owner-avatar">
+                            <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                        </td>
+                        <td class="font-12 pad-l15">
+                            Apnavi Pareek<br/>56 mins ago
+                        </td>
+                    </tr>
+                </table>
+                <button class="btn mar-r5">Don't Delete</button>
+                <button class="btn danger">Yes, Delete it</button>
             </div>
         </div>
-        <?php } ?>
     </div>
 </div>
