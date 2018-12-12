@@ -42,7 +42,10 @@ class Site extends Controller
 
     public function profile() {
         $section = strtolower(\Request::get('section'));
-        $title = "Freevo - My ".ucwords($section);
+        if($section == '') {
+            // Go to personal information page by default
+            $section = 'info';
+        }
         $sectionTitle = [
             'info'      => 'Personal Information',
             'giveaway'  => 'My Giveaway',
@@ -55,6 +58,7 @@ class Site extends Controller
             'deactivate'=> 'Deactivate Account'
 
         ];
+        $title = $sectionTitle[$section];
         echo view('header', ['title' => $title, 'description' => $title]);
         echo view('nav');
         echo view('profile.'.$section, ['section' => $section, 'sectionTitle' => $sectionTitle[$section]]);
