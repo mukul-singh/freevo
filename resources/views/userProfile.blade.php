@@ -18,12 +18,12 @@
         <div class="list-filter">
             <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid avatar">
             <ul class="list-unstyled">
-                <li {{ ($section == 'feedbacks') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=feedbacks">Feedbacks</a></li>
+                <li {{ ($section == 'feedbacks') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=feedbacks">Feedbacks</a></li>
                 <li class="sub">Given</li>
                 <li class="sub">Received</li>
-                <li {{ ($section == 'giveaway') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=giveaway">Giveaways (4)</a></li>
-                <li {{ ($section == 'requested') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=requested">Items Taken (2)</a></li>
-                <li {{ ($section == 'wishlist') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ $username }}?section=wishlist">His Wishlist (5)</a></li>
+                <li {{ ($section == 'giveaway') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=giveaway">Giveaways (4)</a></li>
+                <li {{ ($section == 'requested') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=requested">Items Taken (2)</a></li>
+                <li {{ ($section == 'wishlist') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=wishlist">His Wishlist (5)</a></li>
             </ul>
         </div>
     </div>
