@@ -41,15 +41,15 @@
         <div class="modal-content">
             <div class="modal-body">
                 <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="14" class="float-right close">
-                <b class="f-heading-xs">CANCEL THIS ITEM?</b>
+                <b class="f-heading-xs">DELETE THIS ITEM?</b>
                 <h3 class="f-heading-sm">Super Single Bed King</h3>
                 <p>
                     Are you sure you want to cancel this request? This request will be deleted immediately.
                     You can't undo this action
                 </p>
                 <br/>
-                <button class="btn mar-r5">Don't Cancel</button>
-                <button class="btn danger">Yes, Cancel it</button>
+                <button class="btn mar-r5">Don't Delete</button>
+                <button class="btn danger">Yes, Delete it</button>
             </div>
         </div>
     </div>

@@ -421,6 +421,14 @@ footer .join-freevo-fb h3 {
 .box-wrap.disabled .btn {
     background: #fff;
 }
+.box-wrap .btn-btm {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.box-wrap .btn-btm.mar-btm {
+    margin-bottom: 50px;
+}
 ul.breadcrumb {
     background: none;
     color: #a8aab1;

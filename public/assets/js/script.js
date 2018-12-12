@@ -6,14 +6,14 @@ $(".f-section-wrap .f-category .icon")
         $(this).attr('src', $(this).attr("src").replace('-rollover-active.svg', '.svg'))
     });
 
-function editProfile() {
-    $(".box-wrap input, .box-wrap textarea").attr('disabled', false);
-    $(".edit-visible").removeClass("hidden");
-    $(".info-visible").addClass("hidden");
+function editSection(e) {
+    $(e).parent().parent().find("input, textarea").attr('disabled', false);
+    $(e).parent().find(".edit-visible").removeClass("hidden");
+    $(e).parent().find(".info-visible").addClass("hidden");
 }
 
-function cancelEditProfile() {
-    $(".box-wrap input, .box-wrap textarea").attr('disabled', true);
-    $(".info-visible").removeClass("hidden");
-    $(".edit-visible").addClass("hidden");
+function cancelEditSection(e) {
+    $(e).parent().parent().find("input, textarea").attr('disabled', true);
+    $(e).parent().find(".info-visible").removeClass("hidden");
+    $(e).parent().find(".edit-visible").addClass("hidden");
 }

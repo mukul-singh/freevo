@@ -40,9 +40,9 @@
         </div>
         <div class="col-12 mar-b20"></div>
         <div class="col-12 nopad text-right">
-            <button class="btn hidden edit-visible" onclick="cancelEditProfile()">Cancel</button>
+            <button class="btn hidden edit-visible" onclick="cancelEditSection(this)">Cancel</button>
             <button class="btn hidden edit-visible">Save Profile</button>
-            <button class="btn info-visible" onclick="editProfile()">Edit Profile</button>
+            <button class="btn info-visible" onclick="editSection(this)">Edit Profile</button>
         </div>
     </div>
 </div>
