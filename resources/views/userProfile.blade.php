@@ -53,7 +53,7 @@
                         </td>
                     </tr>
                 </table>
-                <button class="btn mar-r5">Don't Delete</button>
+                <button class="btn mar-r5" data-dismiss="modal">Don't Delete</button>
                 <button class="btn danger">Yes, Delete it</button>
             </div>
         </div>

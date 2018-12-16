@@ -26,16 +26,16 @@
             <div class="col-4 nopad">
                 <div class="font-12 mar-b15"><b>Item Posted</b></div>
                 <div class="progress thin">
-                    <div class="progress-bar bg-pink" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-pink" id="step1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <span class="progress-pin bg-pink"></span>
             </div>
             <div class="col-4 nopad">
                 <div class="font-12 mar-b15"><b>Item Confirmed</b></div>
                 <div class="progress thin">
-                    <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-pink" id="step2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <span class="progress-pin bg-dark-grey"></span>
+                <span class="progress-pin bg-dark-grey" id="step2-pin"></span>
             </div>
             <div class="col-4 nopad">
                 <div class="font-12 mar-b15">
@@ -43,12 +43,12 @@
                     <b class="float-right">Delivered</b>
                 </div>
                 <div class="progress thin">
-                    <div class="progress-bar bg-pink" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-pink" id="step3" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <span class="progress-pin bg-dark-grey"></span>
-                <span class="progress-pin bg-dark-grey float-right"></span>
+                <span class="progress-pin bg-dark-grey" id="step3-pin"></span>
+                <span class="progress-pin bg-dark-grey float-right" id="step4-pin"></span>
             </div>
-            <br/><br/><br/>
+            <div class="col-12 mar-b5"><br/></div>
             <div class="col-6 row product nomar nopad">
                 <div class="col-6 nopad">
                     <div class="info-title">LOCATION</div>
@@ -96,7 +96,7 @@
         </div>
         <br/>
         <button class="btn float-right" data-toggle="modal" data-target="#cancel-item-modal">Cancel</button>
-        <button class="btn float-right">Edit Item</button>
+        <button class="btn float-right" onclick="nextGiveawayStep(this)">Next</button>
     </div>
 </div>
 <div class="modal" id="cancel-item-modal">
@@ -111,7 +111,7 @@
                     You can't undo this action
                 </p>
                 <br/>
-                <button class="btn mar-r5">Don't Cancel</button>
+                <button class="btn mar-r5" data-dismiss="modal">Don't Cancel</button>
                 <button class="btn danger">Yes, Cancel it</button>
             </div>
         </div>

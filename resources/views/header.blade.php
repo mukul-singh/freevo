@@ -10,5 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat:300,500,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ BASE_URL }}assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="{{ BASE_URL }}assets/css/style.css" />
+    <script type="text/javascript">const BASE_URL = "{{ BASE_URL }}"</script>
 </head>
 <body>

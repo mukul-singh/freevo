@@ -29,7 +29,7 @@
                     </td>
                 </tr>
             </table>
-            <h3 class="f-heading-sm">Super Single Bed King</h3>
+            <h3 class="f-heading-sm mar-b5">Super Single Bed King</h3>
             <b>GIVEAWAY</b>
             <p class="mar-v10">
                 Letting go of pre-loved Ikea two-seat sofa bed, as we're moving to a new home. 

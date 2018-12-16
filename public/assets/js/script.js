@@ -17,3 +17,38 @@ function cancelEditSection(e) {
     $(e).parent().find(".info-visible").removeClass("hidden");
     $(e).parent().find(".edit-visible").addClass("hidden");
 }
+
+function nextGiveawayStep(e) {
+    if($(".box-wrap #step2").attr("aria-valuenow") < 80) {
+        $(".box-wrap #step1").css('width', '100%').attr("aria-valuenow", 100)
+        $(".box-wrap #step2").css('width', '80%').attr("aria-valuenow", 80);
+        $(".box-wrap #step2-pin").addClass("bg-pink").removeClass("bg-dark-grey");
+    }
+    else if($(".box-wrap #step3").attr("aria-valuenow") < 80) {
+        $(".box-wrap #step2").css('width', '100%').attr("aria-valuenow", 100)
+        $(".box-wrap #step3").css('width', '80%').attr("aria-valuenow", 80);
+        $(".box-wrap #step3-pin").addClass("bg-pink").removeClass("bg-dark-grey");
+    }
+    else {
+        $(".box-wrap #step3").css('width', '100%').attr("aria-valuenow", 100);
+        $(".box-wrap #step4-pin").addClass("bg-pink").removeClass("bg-dark-grey");
+        $(e).remove();
+    }
+}
+
+function selectItemCategory(e) {
+    if(!$(e).hasClass("active")) {
+        $(".select-category-wrap").removeClass("active");
+        $(e).addClass("active");
+        $(".select-category-wrap .cat-select").remove();
+        $(".select-category-wrap .cat-img").each(function() {
+            if($(this).parent().hasClass("active")) {
+                $(this).attr("src", $(this).attr("src").replace(".svg", "-rollover-active.svg"));
+                $(this).parent().append('<img src="' + BASE_URL + 'assets/images/icons/confirmed.svg" class="cat-select">');
+            }
+            else {
+                $(this).attr("src", $(this).attr("src").replace("-rollover-active.svg", ".svg"));
+            }
+        });
+    }
+}

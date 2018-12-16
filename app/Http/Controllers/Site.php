@@ -31,6 +31,15 @@ class Site extends Controller
         return view('footer');
     }
 
+    public function editItem() {
+        $title = "Freevo - Add/Edit Item";
+        $description = "Freevo - Add/Edit Item";
+        echo view('header', ['title' => $title, 'description' => $description]);
+        echo view('nav');
+        echo view('editItem');
+        return view('footer');
+    }
+
     public function stories() {
         $title = "Freevo - Stories";
         $description = "Freevo - Stories";
