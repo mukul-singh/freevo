@@ -42,7 +42,7 @@
             </select>
         </div>
     </div>
-    <div class="col-sm-10 col-md-10">
+    <div class="col-sm-10 col-md-10 xs-pad-l0">
         <div class="row">
             <?php for($i = 0; $i < 28; $i++) {?>
             <div class="col-6 col-sm-3 col-md-3 pad-r0">

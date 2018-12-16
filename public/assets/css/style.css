@@ -2,6 +2,20 @@
     .modal-sm {
         max-width: 400px;
     }
+    .visible-xs {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .xs-pad-l0 {
+        padding-left: 0 !important;
+    }
+    .xs-pad-r0 {
+        padding-right: 0 !important;
+    }
+    .visible-xs {
+        display: block;
+    }
 }
 .nopad {
     padding: 0 !important
@@ -85,6 +99,12 @@
 .hidden {
     display: none;
 }
+.v-align-b {
+    vertical-align: bottom;
+}
+.fw-300 {
+    font-weight: 300;
+}
 b, .box-wrap label {
     font-weight: 600;
 }
@@ -147,6 +167,7 @@ a, a:hover {
 .f-stories {
     padding: 0 8px;
     line-height: 1.3;
+    margin-bottom: 50px;
 }
 .f-stories .story-desc {
     font-size: 16px;

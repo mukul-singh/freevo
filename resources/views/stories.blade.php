@@ -1,5 +1,38 @@
 <div class="col-12 col-sm-10 col-md-9 row nopad center">
-    <div class="row">
+    <div class="col-12 mar-b15 text-center">
+        <img src="{{ BASE_URL }}assets/images/icons/story-icon.png" width="52">
+    </div>
+    <div class="col-12 col-sm-9 col-md-9 text-center center">
+        <h3 class="f-heading">Freevo Stories</h3>
+        <p class="fw-300">
+            We'd like to express our great admiration to all these exceptional human beings who have give away their own
+            furniture that they used to love for the benefit of others. We are thankful that we have crossed paths and we
+            wish more blessings and gifts find your way. YOU inspire us to continue to GIVE.
+        </p>
+        <button class="btn big blue mar-b20">SUBMIT YOUR STORY</button>
+    </div>
+    <div class="col-12 mar-b20"></div>
+    <div class="row col-12 col-sm-8 col-md-8 xs-pad-r0 center">
+        <div class="col-12 col-sm-5 col-md-6 xs-pad-l0">
+            <label>SEARCH A STORY</label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="visible-xs mar-b20 col-12"></div>
+        <div class="col-6 col-sm-3 col-md-3 pad-l0">
+            <label>FILTER BY YEAR</label>
+            <select class="form-control">
+                <option>Select</option>
+            </select>
+        </div>
+        <div class="col-6 col-sm-3 col-md-3 pad-l0">
+            <label>FILTER BY MONTH</label>
+            <select class="form-control">
+                <option>Select</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-12 mar-b20"><br/></div>
+    <div class="row mar-r0">
         <?php for($i = 0; $i < 20; $i++) {?>
         <div class="col-6 col-sm-3 col-md-3 f-stories" data-toggle="modal" data-target="#story-modal">
             <img src="{{ BASE_URL }}assets/images/stories/{{ ($i % 5) + 1 }}.png" class="img-fluid">
