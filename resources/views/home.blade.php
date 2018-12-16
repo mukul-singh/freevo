@@ -146,7 +146,7 @@
     <div class="modal-dialog">
         <div class="modal-content col-12">
             <div class="row">
-                <div class="col-6 story">
+                <div class="col-12 col-sm-6 col-md-6 story xs-pad-30">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-pink.png" width="20" class="wish-icon">
                     <h3 class="f-heading">Give and get freeloved furniture from friends & neighbours.</h3>
                     <p>
@@ -154,18 +154,25 @@
                         calm even under time pressure. Thank you for reaching out to us. You are amazing!!
                     </p>
                     <div>
-                        Eva,<br/>
-                        Giver @ Freevonation<br/><br/>
-                        BLESSED AWAY A QUEEN SIZE BED AND A 3-SEATER SOFA
+                        <table class="table">
+                            <tr>
+                                <td class="visible-xs pad-l0 pad-t0"><img src="{{ BASE_URL }}assets/images/stories/1.png" class="round-2" width="110" height="110"></td>
+                                <td class="nopad">
+                                    Eva,<br/>
+                                    Giver @ Freevonation<br/><br/>
+                                    BLESSED AWAY A QUEEN SIZE BED AND A 3-SEATER SOFA
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                    <br/><br/><br/><br/><br/>
+                    <div class="mar-b20 hidden-xs"><br/><br/></div>
                     <span class="lgrey font-12">
                         <img src="{{ BASE_URL }}assets/images/icons/share.svg" width="14" class="mar-r5">
                         SHARE
                     </span>
                     <span class="lgrey font-12 pad-l15">25 likes</span>
                 </div>
-                <div class="col-6 nopad">
+                <div class="col-6 hidden-xs nopad">
                     <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid giver-img">
                 </div>
             </div>

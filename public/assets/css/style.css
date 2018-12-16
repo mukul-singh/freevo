@@ -5,6 +5,9 @@
     .visible-xs {
         display: none;
     }
+    .hidden-xs {
+        display: inline-block;
+    }
 }
 @media (max-width: 576px) {
     .xs-pad-l0 {
@@ -13,8 +16,17 @@
     .xs-pad-r0 {
         padding-right: 0 !important;
     }
+    .xs-pad-30 {
+        padding: 30px !important;
+    }
+    .xs-nomar {
+        margin: 0 !important;
+    }
     .visible-xs {
-        display: block;
+        display: inline-block;
+    }
+    .hidden-xs {
+        display: none;
     }
 }
 .nopad {
@@ -105,6 +117,9 @@
 .fw-300 {
     font-weight: 300;
 }
+.round-2 {
+    border-radius: 2px;
+}
 b, .box-wrap label {
     font-weight: 600;
 }
@@ -141,6 +156,19 @@ a, a:hover {
 }
 .nav .nav-links li {
     padding: 10px 18px;
+}
+.sidenav {
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -70%;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    box-shadow: 0 4px 8px -3px #555454;
+    padding: 20px
 }
 .homepage-splash .banner .quote {
     font-family: 'Libre Baskerville', serif;

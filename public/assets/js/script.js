@@ -6,6 +6,13 @@ $(".f-section-wrap .f-category .icon")
         $(this).attr('src', $(this).attr("src").replace('-rollover-active.svg', '.svg'))
     });
 
+function openNav() {
+    document.getElementById("mySidenav").style.left = "0%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.left = "-70%";
+}
 function editSection(e) {
     $(e).parent().parent().find("input, textarea").attr('disabled', false);
     $(e).parent().find(".edit-visible").removeClass("hidden");
