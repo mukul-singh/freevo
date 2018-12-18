@@ -120,6 +120,9 @@ a, a:hover {
     padding: 15px;
     font-weight: 500;
 }
+.nav .xs-nav-menu {
+    margin: 0 15px;
+}
 .nav .logo img {
     max-width: 205px;
 }
@@ -137,7 +140,7 @@ a, a:hover {
     overflow-x: hidden;
     transition: 0.2s;
     box-shadow: 0 4px 8px -3px #555454;
-    padding: 20px
+    padding: 30px
 }
 .homepage-splash .banner .quote {
     font-family: 'Libre Baskerville', serif;
@@ -579,9 +582,33 @@ ul.breadcrumb li {
     .hidden-xs {
         display: none;
     }
+    .homepage-splash .banner .quote {
+        font-size: 32px;
+        padding: 30px;
+    }
+    .homepage-splash .banner img {
+        max-width: 250px;
+        top: 60%;
+    }
+    .f-section-wrap {
+        padding: 100px 8px 50px 8px;
+    }
     .box-wrap {
         border-bottom: 1px solid #dee2e6;
         margin-bottom: 0;
         border-radius: 0;
+    }
+    .f-section-wrap {
+        padding-top: 50px;
+    }
+    .f-section-wrap .f-works {
+        border: none;
+        padding: 6px;
+    }
+    .f-section-wrap .f-works p {
+        margin-bottom: 15px;
+    }
+    footer .col-6 {
+        padding: 30px 15px 0 30px;
     }
 }

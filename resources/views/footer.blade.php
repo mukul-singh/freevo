@@ -1,7 +1,7 @@
 </div>
-<footer>
-    <div class="row col-12 col-sm-10 col-md-10 center nopad">
-        <div class="col-12 join-freevo-fb text-center">
+<footer class="xs-nopad">
+    <div class="row col-12 col-sm-10 col-md-10 center xs-nopad">
+        <div class="col-12 join-freevo-fb text-center xs-nomar">
             <h3 class="f-heading">Meet 15,000+ other awesome people on our Facebook Group</h3>
             <button class="btn blue">VISIT FACEBOOK GROUP</button>
         </div>
@@ -30,7 +30,6 @@
                 <li>Join Facebook Group</li>
             </ul>
         </div>
-        <div class="visible-xs mar-b20 col-12"></div>
         <div class="col-6 col-sm-3 col-md-3">
             <ul class="list-unstyled">
                 <li class="mar-b5 f-heading-xs">FREEVO NATION</li>
@@ -60,8 +59,8 @@
                 <li>Site Map</li>
             </ul>
         </div>
-        <div class="col-12 mar-b20"><br/></div>
-        <div class="col-12">
+        <div class="col-12 mar-b20 hidden-xs"><br/></div>
+        <div class="col-12 xs-pad-30">
             <table>
                 <tr>
                     <td><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" height="28"></td>

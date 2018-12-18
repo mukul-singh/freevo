@@ -1,9 +1,10 @@
 <div class="homepage-splash">
     <div class="nav">
-        <div class="logo col-md-4 col-sm-4 nopad">
-            <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" class="img-fluid"></a>
+        <div class="logo col-12 col-md-4 col-sm-4 nopad">
+            <img src="{{ BASE_URL }}assets/images/icons/nav.png" onclick="openNav()" class="mar-r5 visible-xs xs-nav-menu" width="20">
+            <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" height="28"></a>
         </div>
-        <div class="col-md-8 col-sm-8 nopad">
+        <div class="col-md-8 col-sm-8 nopad hidden-xs">
             <ul class="list-unstyled list-inline float-right">
                 <li class="list-inline-item"><a href="{{ BASE_URL }}listing">ITEMS AVAILABLE</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}giveaway">GIVEAWAY AN ITEM</a></li>
@@ -13,8 +14,18 @@
                 <li class="list-inline-item">LOGIN</li>
             </ul>
         </div>
+        <div id="mySidenav" class="sidenav">
+            <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" width="12" class="float-right" onclick="closeNav()">
+            <ul class="list-unstyled list-inline">
+                <li class="mar-b15"><a href="{{ BASE_URL }}listing">ITEMS AVAILABLE</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}giveaway">GIVEAWAY AN ITEM</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
+                <li class="mar-b15">SIGN UP</li>
+                <li class="mar-b15">LOGIN</li>
+            </ul>
+        </div>
     </div>
-    <div class="clearfix"></div>
     <div class="col-12 banner nopad">
         <img src="{{ BASE_URL }}assets/images/hands.svg">
         <div class="col-12 col-sm-10 col-md-10 center nopad">
@@ -25,27 +36,24 @@
 <div class="f-section-wrap">
     <h2 class="sec-title text-center">Freevo Stories</h2>
     <p class="sec-desc text-center center">Get to know ordinary people who are doing extraordinary things to help us grow our community.</p>
-    <div class="clearfix"></div>
-    <div class="row">
+    <div class="row nomar">
         <?php for($i = 0; $i < 5; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 f-stories pointer <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>" data-toggle="modal" data-target="#story-modal">
             <img src="{{ BASE_URL }}assets/images/stories/{{ $i+1 }}.png" class="img-fluid">
             <div class="pin {{ ['pink', 'blue', 'orange'][rand(0, 2)] }}"></div>
             <p class="story-desc">Blessed away Queen Size Beds & 2-seater Sofa</p>
-            <div class="clearfix"></div>
             <span class="story-user">Aish, Giver</span>
         </div>
         <?php } ?>
     </div>
-    <p class="text-center more font-12">
+    <p class="text-center more font-12 xs-nomar">
         <a href="{{ BASE_URL }}stories">READ MORE STORIES ></a>
     </p>
 </div>
 <div class="f-section-wrap bg-grey">
     <h2 class="sec-title text-center">Old is New</h2>
     <p class="sec-desc text-center center">Here are the latest freeloved home items near you!</p>
-    <div class="clearfix"></div>
-    <div class="row">
+    <div class="row nomar">
         <?php for($i = 0; $i < 5; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 f-stories <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>">
             <div class="f-item">
@@ -72,7 +80,6 @@
                                 </td>
                                 <td class="nopad text-center">
                                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
-                                    <div class="clearfix"></div>
                                     <div class="font-12">53</div>
                                 </td>
                             </tr>
@@ -84,11 +91,10 @@
         <?php } ?>
     </div>
 </div>
-<div class="f-section-wrap bg-grey">
+<div class="f-section-wrap bg-grey xs-nopad">
     <h2 class="sec-title text-center">Freefurnish Your Room</h2>
     <p class="sec-desc text-center center">Shop for free? Why not!<br/>Choose which room do you need some furniture for.<p>
-    <div class="clearfix"></div>
-    <div class="row">
+    <div class="row nomar">
         <?php for($i = 0; $i < 10; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 <?= ($i % 5 == 0) ? 'offset-md-1 offset-sm-1': '';?> text-center f-category">
             <img src="{{ BASE_URL }}assets/images/icons/categories/bedroom.svg" class="img-fluid icon">
@@ -101,8 +107,7 @@
     <div class="col-12 col-sm-10 col-md-10 center">
         <h2 class="sec-title text-center">How it works</h2>
         <p class="sec-desc text-center center">Shop for free? Why not!<br/>Choose which room do you need some furniture for.<p>
-        <div class="clearfix"></div>
-        <div class="row">
+        <div class="row nomar">
             <div class="col-12 col-sm-6 col-md-6 f-works">
                 <h3 class="nomar f-heading">Givers</h3>
                 <p>Shop for free? Why not!<br/>Choose which room do you need some furniture for.</p>
@@ -121,6 +126,7 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12 visible-xs mar-b20"><br/></div>
             <div class="col-12 col-sm-6 col-md-6 f-works border-l0">
                 <h3 class="nomar f-heading">Takers</h3>
                 <p>Shop for free? Why not!<br/>Choose which room do you need some furniture for.</p>

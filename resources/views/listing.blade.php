@@ -70,7 +70,6 @@
                                     </td>
                                     <td class="nopad text-center">
                                         <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
-                                        <div class="clearfix"></div>
                                         <div class="font-12">53</div>
                                     </td>
                                 </tr>

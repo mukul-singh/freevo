@@ -38,7 +38,6 @@
             <img src="{{ BASE_URL }}assets/images/stories/{{ ($i % 5) + 1 }}.png" class="img-fluid">
             <div class="pin {{ ['pink', 'blue', 'orange'][rand(0, 2)] }}"></div>
             <p class="story-desc">Blessed away Queen Size Beds & 2-seater Sofa</p>
-            <div class="clearfix"></div>
             <span class="story-user">Aish, Giver</span>
         </div>
         <?php } ?>
