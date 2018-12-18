@@ -1,5 +1,5 @@
 <div class="col-12 col-sm-10 col-md-9 row nopad center">
-    <div class="col-12 nopad">
+    <div class="col-12 nopad hidden-xs">
         <ul class="list-unstyled breadcrumb nopad font-12">
             <li>Home</li>
             <li>></li>
@@ -8,26 +8,31 @@
             <li>{{ $username }}</li>
         </ul>
     </div>
-    <div class="col-3 nopad">
+    <div class="col-3 nopad hidden-xs">
         <h3 class="f-heading">{{ $username }}</h3>
     </div>
-    <div class="col-9 pad-r0">
+    <div class="col-9 pad-r0 hidden-xs">
         <h3 class="f-heading-sm">{{ $sectionTitle }}</h3>
     </div>
-    <div class="col-3 nopad">
-        <div class="list-filter">
-            <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid avatar">
-            <ul class="list-unstyled">
-                <li {{ ($section == 'feedbacks') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=feedbacks">Feedbacks</a></li>
-                <li class="sub">Given</li>
-                <li class="sub">Received</li>
-                <li {{ ($section == 'giveaway') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=giveaway">Giveaways (4)</a></li>
-                <li {{ ($section == 'requested') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=requested">Items Taken (2)</a></li>
-                <li {{ ($section == 'wishlist') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=wishlist">His Wishlist (5)</a></li>
-            </ul>
+    <div class="col-12 col-sm-3 col-md-3 nopad">
+        <div class="list-filter row nomar xs-pad-b0">
+            <div class="col-6 col-sm-12 col-md-12 nopad">
+                <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid avatar round-2">
+            </div>
+            <div class="col-6 col-sm-12 col-md-12 nopad xs-pad-l30">
+                <h3 class="f-heading visible-xs">{{ $username }}</h3>
+                <ul class="list-unstyled">
+                    <li class="xs-nomar {{ ($section == 'feedbacks') ? ' active' : '' }}"><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=feedbacks">Feedbacks</a></li>
+                    <li class="sub xs-nomar xs-nopad">Given</li>
+                    <li class="sub xs-nomar xs-nopad">Received</li>
+                    <li class="xs-nomar {{ ($section == 'giveaway') ? ' active' : '' }}"><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=giveaway">Giveaways (4)</a></li>
+                    <li class="xs-nomar {{ ($section == 'requested') ? ' active' : '' }}"><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=requested">Items Taken (2)</a></li>
+                    <li class="xs-nomar {{ ($section == 'wishlist') ? ' active' : '' }}"><a href="{{ BASE_URL }}profile/{{ strtolower($username) }}?section=wishlist">His Wishlist (5)</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="col-9 pad-r0">
+    <div class="col-12 col-sm-9 col-md-9 pad-r0 xs-nopad">
         @section('content')
         @show
     </div>

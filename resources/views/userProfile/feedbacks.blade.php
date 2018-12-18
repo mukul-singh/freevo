@@ -1,11 +1,12 @@
 @extends('userProfile')
 @section('content')
 <div class="box-wrap col-12 bg-white row nomar">
-    <div class="col-12 col-sm-8 col-md-8 pad-l0">
+    <div class="col-12 col-sm-8 col-md-8 pad-l0 xs-nopad">
         <label class="mar-b5">LEAVE A FEEDBACK</label>
         <textarea class="form-control" rows="4"></textarea>
     </div>
-    <div class="col-12 col-sm-4 col-md-4 pad-r0">
+    <div class="col-12 visible-xs mar-b20"></div>
+    <div class="col-12 col-sm-4 col-md-4 pad-r0 xs-nopad">
         <label class="mar-b5">CHOOSE ITEM</label>
         <select class="form-control mar-b20">
             <option>Feedback</option>
@@ -17,7 +18,7 @@
 <div class="col-12 row nomar pad-l0">
     <div class="row">
     <?php for($i = 0; $i < 6; $i++) {?>
-    <div class="col-4 pad-r0">
+    <div class="col-12 col-sm-4 col-md-4 pad-r0">
         <div class="box-wrap bg-white font-12">
             <table class="table owner">
                 <tr>

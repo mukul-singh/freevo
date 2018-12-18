@@ -1,34 +1,3 @@
-@media (min-width: 576px) {
-    .modal-sm {
-        max-width: 400px;
-    }
-    .visible-xs {
-        display: none;
-    }
-    .hidden-xs {
-        display: inline-block;
-    }
-}
-@media (max-width: 576px) {
-    .xs-pad-l0 {
-        padding-left: 0 !important;
-    }
-    .xs-pad-r0 {
-        padding-right: 0 !important;
-    }
-    .xs-pad-30 {
-        padding: 30px !important;
-    }
-    .xs-nomar {
-        margin: 0 !important;
-    }
-    .visible-xs {
-        display: inline-block;
-    }
-    .hidden-xs {
-        display: none;
-    }
-}
 .nopad {
     padding: 0 !important
 }
@@ -395,6 +364,7 @@ footer .join-freevo-fb h3 {
 }
 .list-filter .avatar {
     margin-bottom: 25px;
+    width: 100%;
 }
 .list-filter ul, .list-filter ul li:last-child {
     margin-bottom: 0;
@@ -557,4 +527,61 @@ ul.breadcrumb li {
     bottom: 5px;
     right: 5px;
     width: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .modal-sm {
+        max-width: 400px;
+    }
+    .visible-xs {
+        display: none;
+    }
+    .hidden-xs {
+        display: inline-block;
+    }
+}
+@media (max-width: 576px) {
+    .xs-pad-l0 {
+        padding-left: 0 !important;
+    }
+    .xs-pad-r0 {
+        padding-right: 0 !important;
+    }
+    .xs-pad-b0 {
+        padding-bottom: 0 !important;
+    }
+    .xs-pad-30 {
+        padding: 30px !important;
+    }
+    .xs-pad-l30 {
+        padding-left: 30px !important;
+    }
+    .xs-nopad {
+        padding: 0 !important;
+    }
+    .xs-nomar {
+        margin: 0 !important;
+    }
+    .visible-xs {
+        display: inline-block;
+    }
+    .hidden-xs {
+        display: none;
+    }
+    .box-wrap {
+        border-bottom: 1px solid #dee2e6;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
 }
