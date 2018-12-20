@@ -25,6 +25,9 @@
 .mar-r5 {
     margin-right: 5px;
 }
+.mar-r15 {
+    margin-right: 15px;
+}
 .mar-b5 {
     margin-bottom: 5px;
 }
@@ -49,6 +52,9 @@
 }
 .font-12, .font-12 * {
     font-size: 12px;
+}
+.font-11 {
+    font-size: 11px;
 }
 .full-w {
     width: 100%;
@@ -88,6 +94,12 @@
 }
 .round-2 {
     border-radius: 2px;
+}
+.no-border {
+    border: none;
+}
+.form-control.no-border {
+    padding: 8px 12px;
 }
 b, .box-wrap label {
     font-weight: 600;
@@ -324,6 +336,12 @@ table.owner td {
     border-color: #f8090e;
     color: #f50812;
 }
+.btn:not(.blue) {
+    padding: 8px 15px;
+}
+.btn.big:not(.blue) {
+    padding: 11px 15px;
+}
 .btn img {
     margin-right: 5px;
     max-height: 14px;
@@ -507,8 +525,14 @@ ul.breadcrumb li {
     background: #fff;
     height: 120px;
 }
+.item-photo-wrap .add-item-photo.xs {
+    height: 60px;
+}
 .add-item-photo .select-icon {
     margin-top: 50px;
+}
+.add-item-photo.xs .select-icon {
+    margin-top: 25px;
 }
 .add-item-photo .item-img {
     min-width: 100%;
@@ -530,6 +554,16 @@ ul.breadcrumb li {
     bottom: 5px;
     right: 5px;
     width: 16px;
+}
+.address-arrow {
+    position: absolute;
+    margin-top: -112px;
+}
+.address-arrow.left {
+    left: -30px;
+}
+.address-arrow.right {
+    right: -30px;
 }
 
 

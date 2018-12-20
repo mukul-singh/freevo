@@ -1,7 +1,7 @@
 <div class="bg-grey">
     <div class="nav">
         <div class="logo col-12 col-md-4 col-sm-4 nopad">
-            <img src="{{ BASE_URL }}assets/images/icons/nav.png" onclick="openNav()" class="mar-r5 visible-xs" width="20">
+            <img src="{{ BASE_URL }}assets/images/icons/nav.png" onclick="openNav()" class="visible-xs xs-nav-menu" width="20">
             <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" height="28"></a>
         </div>
         <div class="col-md-8 col-sm-8 nopad hidden-xs">

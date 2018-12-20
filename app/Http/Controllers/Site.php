@@ -103,4 +103,13 @@ class Site extends Controller
         return view('footer');
     }
 
+    public function postItem() {
+        $title = "Freevo - Post An Item";
+        $description = "Freevo - Post An Item";
+        echo view('header', ['title' => $title, 'description' => $description]);
+        echo view('nav');
+        echo view('postItem');
+        return view('footer');
+    }
+
 }

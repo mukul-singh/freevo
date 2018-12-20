@@ -19,3 +19,4 @@ Route::get('/stories', 'Site@stories');
 Route::get('/profile', 'Site@profile');
 Route::get('/profile/{username}', 'Site@userProfile');
 Route::get('/giveaway', 'Site@giveaway');
+Route::get('/post-item', 'Site@postItem');
