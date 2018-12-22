@@ -11,7 +11,7 @@
                 <li class="list-inline-item"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="list-inline-item">SIGN UP</li>
-                <li class="list-inline-item">LOGIN</li>
+                <li class="list-inline-item pointer" data-toggle="modal" data-target="#login-modal">LOGIN</li>
             </ul>
         </div>
         <div id="mySidenav" class="sidenav">
@@ -22,7 +22,7 @@
                 <li class="mar-b15"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
                 <li class="mar-b15"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="mar-b15">SIGN UP</li>
-                <li class="mar-b15">LOGIN</li>
+                <li class="mar-b15" data-toggle="modal" data-target="#login-modal">LOGIN</li>
             </ul>
         </div>
     </div>
@@ -180,6 +180,43 @@
                 </div>
                 <div class="col-6 hidden-xs nopad">
                     <img src="{{ BASE_URL }}assets/images/stories/1.png" class="img-fluid giver-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="login-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="12" class="float-right close visible-xs">
+                <img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" class="mar-b20" width="180">
+                <div class="col-9 center nopad">
+                    <button class="btn big fb full-w mar-b5">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img src="{{ BASE_URL }}assets/images/icons/social/facebook.png">
+                                </td>
+                                <td>LOGIN WITH FACEBOOK</td>
+                            </tr>
+                        </table>
+                    </button>
+                </div>
+                <div class="col-11 center nopad">
+                    <hr class="mar-b20" />
+                </div>
+                <div class="col-9 center nopad">
+                    <input type="text" class="form-control mar-b20" placeholder="Email">
+                    <input type="password" class="form-control mar-b15" placeholder="Password">
+                    <label class="font-12 float-left lgrey pointer">
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <i class="font-12 float-right lgrey pointer">Forgot Password?</i>
+                </div>
+                <div class="col-9 text-right float-right hands">
+                    <img src="{{ BASE_URL }}assets/images/hands.svg" class="img-fluid">
                 </div>
             </div>
         </div>
