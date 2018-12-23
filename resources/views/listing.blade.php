@@ -44,12 +44,14 @@
     </div>
     <div class="col-sm-10 col-md-10 xs-pad-l0">
         <div class="row">
-            <?php for($i = 0; $i < 28; $i++) {?>
+            <?php for($i = 1; $i < 29; $i++) {?>
             <div class="col-6 col-sm-3 col-md-3 pad-r0">
                 <div class="f-item">
-                    <a href="{{ BASE_URL }}single">
-                        <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
-                    </a>
+                    <div class="f-item-img">
+                        <a href="{{ BASE_URL }}single">
+                            <img src="{{ BASE_URL }}assets/images/single{{($i % 4) + 1}}.png" class="img-fluid">
+                        </a>
+                    </div>
                     <div class="add-to-wishlist">
                         <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
                     </div>

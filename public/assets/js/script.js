@@ -59,3 +59,9 @@ function selectItemCategory(e) {
         });
     }
 }
+
+$("#img-catalog.carousel .carousel-item img").click(function() {
+    $("#img-catalog.carousel .carousel-item img").removeClass("active");
+    $(this).addClass("active");
+    $("#img-view img").attr("src", $(this).attr("data-full-img"));
+});

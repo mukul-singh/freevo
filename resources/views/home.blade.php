@@ -57,9 +57,11 @@
         <?php for($i = 0; $i < 5; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 f-stories <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>">
             <div class="f-item">
-                <a href="{{ BASE_URL }}single">
-                    <img src="{{ BASE_URL }}assets/images/item.png" class="img-fluid f-item-img">
-                </a>
+                <div class="f-item-img">
+                    <a href="{{ BASE_URL }}single">
+                        <img src="{{ BASE_URL }}assets/images/single{{($i % 4) + 1}}.png" class="img-fluid">
+                    </a>
+                </div>
                 <div class="add-to-wishlist">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
                 </div>

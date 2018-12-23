@@ -1,13 +1,72 @@
 <div class="col-12 col-sm-10 col-md-9 row nopad center product">
-    <div class="col-12 col-sm-6 col-md-6 nopad img-catalog">
-        <img src="{{ BASE_URL }}assets/images/single1.png" class="img-fluid" id="img-view">
-        <div class="carousel">
-            <?php for($i = 0; $i < 9; $i++) {?>
-            <img src="{{ BASE_URL }}assets/images/single1.png">
-            <?php } ?>
+    <div class="col-12 nopad mar-b15">
+        <ul class="list-unstyled breadcrumb nopad font-12">
+            <li>Home</li>
+            <li>></li>
+            <li>Bedroom</li>
+            <li>></li>
+            <li>Bed & Mattresses</li>
+        </ul>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6 nopad img-catalog mar-b20">
+        <div class="col-12 nopad mar-b20" id="img-view">
+            <img src="{{ BASE_URL }}assets/images/single1.png" class="img-fluid" id="img-view">
+        </div>
+        <div id="img-catalog" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="container carousel-inner nopad">
+                <div class="carousel-item active">
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" class="active">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single2.png" data-full-img="{{ BASE_URL }}assets/images/single2.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single3.png" data-full-img="{{ BASE_URL }}assets/images/single3.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" data-full-img="{{ BASE_URL }}assets/images/single1.png">
+                    </div>   
+                </div>
+                <div class="carousel-item">
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" data-full-img="{{ BASE_URL }}assets/images/single1.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single2.png" data-full-img="{{ BASE_URL }}assets/images/single2.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single3.png" data-full-img="{{ BASE_URL }}assets/images/single3.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" data-full-img="{{ BASE_URL }}assets/images/single1.png">
+                    </div>   
+                </div>
+                <div class="carousel-item">
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" data-full-img="{{ BASE_URL }}assets/images/single1.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single2.png" data-full-img="{{ BASE_URL }}assets/images/single2.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single3.png" data-full-img="{{ BASE_URL }}assets/images/single3.png">
+                    </div>
+                    <div class="col-3">
+                        <img src="{{ BASE_URL }}assets/images/single1.png" data-full-img="{{ BASE_URL }}assets/images/single1.png">
+                    </div>   
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#img-catalog" data-slide="prev">
+                <img src="{{ BASE_URL }}assets/images/icons/prev.png" width="12">
+            </a>
+            <a class="carousel-control-next nomar" href="#img-catalog" data-slide="next">
+                <img src="{{ BASE_URL }}assets/images/icons/next.png" width="12">
+            </a>
         </div>
     </div>
-    <div class="col-12 col-sm-6 col-md-6 product-desc">
+    <div class="col-12 col-sm-6 col-md-6 product-desc mar-b20">
         <h3 class="f-heading">Super Single Bed King</h3>
         <table class="table owner">
             <tr>
@@ -25,7 +84,7 @@
             </tr>
         </table>
         <div class="row">
-            <div class="col-6">
+            <div class="col-6 xs-pad-r0">
                 <button class="btn full-w">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
                     ADD TO WISHLIST
@@ -185,6 +244,92 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="col-12 hidden-xs"><br/><br/><br/></div>
+    <div class="col-12 pad-l0">
+        <div class="mar-b15 xs-pad-l15 f-heading-xs"><b>Similar Items</b></div>
+        <div class="row">
+        <?php for($i = 1; $i < 5; $i++) {?>
+        <div class="col-6 col-sm-3 col-md-3 pad-r0">
+            <div class="f-item">
+                <div class="f-item-img">
+                    <a href="{{ BASE_URL }}single">
+                        <img src="{{ BASE_URL }}assets/images/single{{($i % 4) + 1}}.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="add-to-wishlist">
+                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
+                </div>
+                <div class="desc">
+                    <a href="{{ BASE_URL }}single">
+                        <p class="title">Table Lamp</p>
+                        <span class="location">Bedok South</span>
+                        <button class="btn">I AM INTERESTED</button>
+                    </a>
+                    <a href="{{ BASE_URL }}profile/ranjan">
+                        <table class="table owner">
+                            <tr>
+                                <td class="nopad owner-avatar">
+                                    <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                                </td>
+                                <td class="font-12">
+                                    Apnavi Pareek<br/>56 mins ago
+                                </td>
+                                <td class="nopad text-center">
+                                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
+                                    <div class="font-12">53</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+        </div>
+    </div>
+    <div class="col-12 hidden-xs"><br/><br/><br/></div>
+    <div class="col-12 pad-l0">
+        <div class="mar-b15 xs-pad-l15 f-heading-xs"><b>Other items from same giver</b></div>
+        <div class="row">
+        <?php for($i = 1; $i < 4; $i++) {?>
+        <div class="col-6 col-sm-3 col-md-3 pad-r0">
+            <div class="f-item">
+                <div class="f-item-img">
+                    <a href="{{ BASE_URL }}single">
+                        <img src="{{ BASE_URL }}assets/images/single{{($i % 4) + 1}}.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="add-to-wishlist">
+                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wishlist.svg">
+                </div>
+                <div class="desc">
+                    <a href="{{ BASE_URL }}single">
+                        <p class="title">Table Lamp</p>
+                        <span class="location">Bedok South</span>
+                        <button class="btn">I AM INTERESTED</button>
+                    </a>
+                    <a href="{{ BASE_URL }}profile/ranjan">
+                        <table class="table owner">
+                            <tr>
+                                <td class="nopad owner-avatar">
+                                    <img src="{{ BASE_URL }}assets/images/item-owner.png">
+                                </td>
+                                <td class="font-12">
+                                    Apnavi Pareek<br/>56 mins ago
+                                </td>
+                                <td class="nopad text-center">
+                                    <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-heart.png">
+                                    <div class="font-12">53</div>
+                                </td>
+                            </tr>
+                        </table>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
         </div>
     </div>
 </div>
