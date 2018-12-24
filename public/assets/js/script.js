@@ -65,3 +65,18 @@ $("#img-catalog.carousel .carousel-item img").click(function() {
     $(this).addClass("active");
     $("#img-view img").attr("src", $(this).attr("data-full-img"));
 });
+
+function getFgtPwdModal() {
+    $(".login-wrap, .new-pwd-wrap").hide();
+    $(".fgt-pwd-wrap").show();
+}
+
+function getLoginModal() {
+    $(".fgt-pwd-wrap, .new-pwd-wrap").hide();
+    $(".login-wrap").show();
+}
+
+function getNewPwdModal() {
+    $(".login-wrap, .fgt-pwd-wrap").hide();
+    $(".new-pwd-wrap").show();
+}

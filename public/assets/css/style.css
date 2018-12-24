@@ -333,12 +333,19 @@ table.owner td {
     margin-right: -2rem;
     margin-bottom: -1rem;
 }
+#login-modal .fgt-pwd-wrap, #login-modal .new-pwd-wrap {
+    padding: 30px 40px 40px 40px;
+}
 .btn {
     font-size: 12px;
     background: none;
     border: 1px solid #777;
     padding: 9px 15px;
     line-height: 1;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 .btn.big {
     padding: 12px 15px;
@@ -458,6 +465,37 @@ footer .join-freevo-fb h3 {
 }
 .product .info {
     font-size: 13px;
+}
+#img-catalog.carousel {
+    overflow: hidden;
+}
+#img-catalog.carousel .carousel-item {
+    width: auto;
+    margin-right: -20px;
+}
+#img-catalog.carousel .col-3 {
+  display: inline-block;
+  margin-left:-5px;
+  padding: 0 10px 0 0;
+  height: 90px;
+  overflow: hidden;
+}
+#img-catalog.carousel .carousel-item img {
+  width:100%;
+  height:auto;
+  opacity: 0.6;
+  cursor: pointer;
+  min-height: 90px;
+}
+#img-catalog.carousel .carousel-item img.active {
+    opacity: 1;
+}
+#img-catalog .carousel-control-next {
+    margin-right: 20px;
+}
+#img-catalog .carousel-control-prev, #img-catalog .carousel-control-next {
+    opacity: 1;
+    width: 30px
 }
 #request-item-modal .modal-content {
     padding: 40px 25px 40px 40px;
@@ -678,55 +716,4 @@ ul.breadcrumb li {
     footer .col-6 {
         padding: 30px 15px 0 30px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#img-catalog.carousel {
-    overflow: hidden;
-}
-#img-catalog.carousel .carousel-item {
-    width: auto;
-    margin-right: -20px;
-}
-#img-catalog.carousel .col-3 {
-  display: inline-block;
-  margin-left:-5px;
-  padding: 0 10px 0 0;
-  height: 90px;
-  overflow: hidden;
-}
-#img-catalog.carousel .carousel-item img {
-  width:100%;
-  height:auto;
-  opacity: 0.6;
-  cursor: pointer;
-  min-height: 90px;
-}
-#img-catalog.carousel .carousel-item img.active {
-    opacity: 1;
-}
-#img-catalog .carousel-control-next {
-    margin-right: 20px;
-}
-#img-catalog .carousel-control-prev, #img-catalog .carousel-control-next {
-    opacity: 1;
-    width: 30px
 }

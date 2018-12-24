@@ -47,10 +47,10 @@
                 <li class="mar-b5">
                     <ul class="list-unstyled list-inline">
                         <li class="list-inline-item">
-                            <img class="mar-r5" src="{{ BASE_URL }}assets/images/icons/social/fb.svg" width="12">
-                            <img class="mar-r5" src="{{ BASE_URL }}assets/images/icons/social/twitter.svg" width="20">
-                            <img class="mar-r5" src="{{ BASE_URL }}assets/images/icons/social/insta.svg" width="20">
-                            <img class="mar-r5" src="{{ BASE_URL }}assets/images/icons/social/youtube.svg" width="20">
+                            <img class="mar-r15" src="{{ BASE_URL }}assets/images/icons/social/fb.svg" width="12">
+                            <img class="mar-r15" src="{{ BASE_URL }}assets/images/icons/social/twitter.svg" width="20">
+                            <img class="mar-r15" src="{{ BASE_URL }}assets/images/icons/social/insta.svg" width="20">
+                            <img class="mar-r15" src="{{ BASE_URL }}assets/images/icons/social/youtube.svg" width="20">
                         </li>
                     </ul>
                 </li>
