@@ -5,14 +5,24 @@
             <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" height="28"></a>
         </div>
         <div class="col-md-8 col-sm-8 nopad hidden-xs">
-            <ul class="list-unstyled list-inline float-right">
-                <li class="list-inline-item"><a href="{{ BASE_URL }}listing">ITEMS AVAILABLE</a></li>
+            <ul class="list-unstyled list-inline nav-links float-right nomar">
+                <li class="list-inline-item dropdown-toggle pointer">ITEMS AVAILABLE</li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}giveaway">GIVEAWAY AN ITEM</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="list-inline-item pointer" data-toggle="modal" data-target="#login-modal">SIGN UP</li>
                 <li class="list-inline-item pointer" data-toggle="modal" data-target="#login-modal">LOGIN</li>
             </ul>
+        </div>
+        <div class="col-12 dropdown-menu row nomar text-right">
+            <?php for ($i = 0; $i < 10; $i++) { ?>
+            <div class="col-1">
+                <a href="{{ BASE_URL }}listing">
+                    <img src="{{ BASE_URL }}assets/images/icons/categories/bedroom.svg" class="img-fluid mar-b5">
+                    <b class="font-12">Bedroom</b>
+                </a>
+            </div>
+            <?php } ?>
         </div>
         <div id="mySidenav" class="sidenav">
             <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" width="12" class="float-right" onclick="closeNav()">
@@ -23,6 +33,16 @@
                 <li class="mar-b15"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="mar-b15" data-toggle="modal" data-target="#login-modal">SIGN UP</li>
                 <li class="mar-b15" data-toggle="modal" data-target="#login-modal">LOGIN</li>
+            </ul>
+            <hr/>
+            <ul class="list-unstyled list-inline">
+                <li class="f-heading-xs mar-b20">My Freevo</li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=info">Personal Information</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=giveaway">My Giveaways</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=requested">Requested Items</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=wishlist">My Wishlist</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=addresses">Manage Addresses</a></li>
+                <li class="mar-b15"><a href="{{ BASE_URL }}profile?section=feedbacks">Feedbacks</a></li>
             </ul>
         </div>
     </div>

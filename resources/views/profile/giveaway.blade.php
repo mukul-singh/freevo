@@ -10,7 +10,7 @@
             <b>GIVEAWAY ID</b><br/>
             <span class="font-12">Ad73467</span>
         </div>
-        <div class="col-7">
+        <div class="col-7 xs-nopad">
             <h3 class="f-heading-sm">Super Single Bed King</h3>
             REQUESTED ON 10/10/2018
         </div>
@@ -18,7 +18,7 @@
             ACTIVE<br/>
             <span class="font-12">Item requested</span>
         </div>
-        <div class="col-7">
+        <div class="col-7 xs-nopad">
             <table class="mar-b20">
                 <tr>
                     <td><b>ITEM DELIVERY DATE</b></td>
@@ -35,7 +35,7 @@
             </table>
         </div>
         <div class="col-12 pad-r0 text-right">
-            <button class="btn">Need Help?</button>
+            <button class="btn hidden-xs">Need Help?</button>
             <button class="btn">View</button>
             <button class="btn" data-toggle="modal" data-target="#cancel-item-modal">Delete</button>
         </div>

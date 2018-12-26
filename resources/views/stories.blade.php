@@ -48,6 +48,7 @@
         <div class="modal-content col-12">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 story xs-pad-30">
+                    <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="12" class="close visible-xs">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-pink.png" width="20" class="wish-icon">
                     <h3 class="f-heading">Give and get freeloved furniture from friends & neighbours.</h3>
                     <p>

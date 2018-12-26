@@ -27,7 +27,7 @@
         <br/>
         <div class="text-right">
             <button class="btn">Request Item</button>
-            <button class="btn">View</button>
+            <button class="btn hidden-xs">View</button>
             <button class="btn" data-toggle="modal" data-target="#cancel-item-modal">Delete</button>
         </div>
     </div>

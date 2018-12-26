@@ -1,4 +1,4 @@
-<div class="col-12 col-sm-10 col-md-9 row nopad center">
+<div class="col-12 col-sm-10 col-md-9 row center">
     <div class="col-12 mar-b20">
         <h3 class="f-heading-sm text-center">Edit Item</h3>
     </div>
@@ -20,7 +20,7 @@
     <div class="col-12 nopad mar-v10">SELECT A CATEGORY</div>
     <div class="col-12 row nopad nomar bg-white">
         <?php for($x = 0; $x < 3; $x++){?>
-            <div class="col-4 row nopad nomar">
+            <div class="col-12 col-sm-4 col-md-4 row nopad nomar">
                 <?php for($i = 0; $i < 3; $i++){?>
                 <div class="col-4 border select-category-wrap text-center pointer" onclick="selectItemCategory(this)">
                     <img src="{{ BASE_URL }}assets/images/icons/categories/bedroom.svg" class="img-fluid cat-img">
@@ -32,36 +32,38 @@
     </div>
     <div class="col-12 mar-b20"><br/></div>
     <div class="col-12 row nopad nomar">
-        <div class="col-6 row nomar nopad font-12">
-            <div class="col-6 pad-l0 mar-b20">
-                <label class="mar-v10">SELECT ITEM TYPE</label>
-                <select class="form-control">
-                    <option>Armchair</option>
-                    <option>Single Bed</option>
-                    <option>Queen Bed</option>
-                    <option>King Bed</option>
-                </select>
+        <div class="col-12 col-sm-6 col-md-6 nopad font-12">
+            <div class="row nomar xs-mar-r-m15">
+                <div class="col-6 pad-l0 mar-b20">
+                    <label class="mar-v10">SELECT ITEM TYPE</label>
+                    <select class="form-control">
+                        <option>Armchair</option>
+                        <option>Single Bed</option>
+                        <option>Queen Bed</option>
+                        <option>King Bed</option>
+                    </select>
+                </div>
+                <div class="col-6 pad-l0 mar-b20">
+                    <label class="mar-v10">SELECT QUANTITY</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
             </div>
-            <div class="col-6 pad-l0 mar-b20">
-                <label class="mar-v10">SELECT QUANTITY</label>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
-            </div>
-            <div class="col-12 pad-l0 mar-b20">
+            <div class="col-12 pad-l0 mar-b20 xs-nopad">
                 <label class="mar-v10">ITEM NAME</label>
                 <input type="text" class="form-control" value="Rocking Wooden Chair" />
             </div>
-            <div class="col-12 pad-l0">
+            <div class="col-12 pad-l0 mar-b20 xs-nopad">
                 <label class="mar-v10">DESCRIPTION (max 100 words)</label>
                 <textarea class="form-control" rows="8">Letting go of pre-loved Ikea two-seat sofa bed, as we're moving to a new home. Spacious sofa bed with removable covers for machine wash.
                 </textarea>
             </div>
         </div>
-        <div class="col-6 row nomar nopad font-12">
+        <div class="col-12 col-sm-6 col-md-6 row nomar nopad font-12">
             <div class="col-12 nopad">
                 <div class="row mar-r0">
                     <label class="mar-v10 pad-l15">SIZE (L X B X H)</label>

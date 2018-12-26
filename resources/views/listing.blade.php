@@ -7,7 +7,11 @@
     <div class="col-sm-10 col-md-10 offset-sm-2 offset-md-2 pagination-options">
         <span class="active">Bedroom > Sofa Beds : 1-32</span> of 2454 Options | Next | Previous
     </div>
-    <div class="col-sm-2 col-md-2 nopad">
+    <div class="col-12 col-sm-2 col-md-2 nopad">
+        <div class="col-12 visible-xs mar-v10">
+            <b>CATEGORIES</b>
+            <span class="font-11 float-right" onclick="toggleSideBar()">View</span>
+        </div>
         <div class="list-filter">
             <ul class="list-unstyled">
                 <li>Bedroom</li>
@@ -31,15 +35,21 @@
             </ul>
         </div>
         <div class="list-filter">
-            Filter By
-            <select>
-                <option>Geylang</option>
-                <option>Option 2</option>
-            </select>
-            <select>
-                <option>Geylang</option>
-                <option>Option 2</option>
-            </select>
+            <div class="col-12 nopad mar-b15">Filter By</div>
+            <div class="row nomar">
+                <div class="col-6 col-sm-12 col-md-12 pad-l0 mar-b15 xs-nomar sm-nopad">
+                    <select class="form-control">
+                        <option>Geylang</option>
+                        <option>Option 2</option>
+                    </select>
+                </div>
+                <div class="col-6 col-sm-12 col-md-12 pad-r0 sm-nopad">
+                    <select class="form-control">
+                        <option>Geylang</option>
+                        <option>Option 2</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-sm-10 col-md-10 xs-pad-l0">

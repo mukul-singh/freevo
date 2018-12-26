@@ -5,7 +5,7 @@
     <div class="col-3 pad-l0">
         <img src="{{ BASE_URL }}assets/images/single1.png" class="img-fluid">
     </div>
-    <div class="col-5 font-12">
+    <div class="col-9 col-sm-5 col-md-5 font-12 mar-b15">
         <h3 class="f-heading-sm">Super Single Bed King</h3>
         <div class="mar-v10"><b>REQUEST ID</b> : Ad343764</div>
         <table class="owner">
@@ -19,7 +19,7 @@
             </tr>
         </table>
     </div>
-    <div class="col-4 font-12 nopad">
+    <div class="col-12 col-sm-4 col-md-4 font-12 nopad">
         Letting go of pre-loved Ikea two-seat sofa bed, as we're moving to a new home. 
         Spacious sofa bed with removable covers for machine wash. Letting go of pre-loved 
         Ikea two-seat sofa bed.

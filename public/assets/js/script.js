@@ -1,4 +1,4 @@
-$(".f-section-wrap .f-category .icon")
+$(".f-section-wrap .f-category .icon, .nav .dropdown-menu .col-1 img")
     .mouseover(function() {
         $(this).attr('src', $(this).attr("src").replace('.svg', '-rollover-active.svg'))
     })
@@ -80,3 +80,20 @@ function getNewPwdModal() {
     $(".login-wrap, .fgt-pwd-wrap").hide();
     $(".new-pwd-wrap").show();
 }
+
+function toggleSideBar() {
+    $(".list-filter").slideToggle();
+}
+
+function showContent(elementToShow, elementToHide) {
+    $(elementToHide).addClass("hidden");
+    $(elementToShow).removeClass("hidden");
+}
+
+$(".nav .dropdown-toggle").hover(function() {
+    $(".nav .dropdown-menu").show();
+});
+
+$(".nav .dropdown-menu").mouseleave(function() {
+    $(".nav .dropdown-menu").hide();
+});

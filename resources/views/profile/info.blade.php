@@ -1,12 +1,12 @@
 @extends('profile')
 @section('content')
 <div class="col-12 row box-wrap bg-white">
-    <div class="col-3 pad-l0">
-        <b>PHOTO</b>
-        <img src="{{ BASE_URL }}assets/images/single1.png" class="img-fluid">
-        <span class="pointer font-12">Change my photo</span>
+    <div class="col-12 col-sm-3 col-md-3 pad-l0">
+        <b class="hidden-xs">PHOTO</b>
+        <img src="{{ BASE_URL }}assets/images/item-owner.png" class="img-fluid mar-b5 round-2">
+        <div class="pointer font-12 mar-b20">Change my photo</div>
     </div>
-    <div class="col-9 row nomar nopad">
+    <div class="col-12 col-sm-9 col-md-9 row nomar nopad xs-mar-l-m15">
         <div class="col-6 pad-r0">
             <label>FIRST NAME</label>
             <input type="text" class="form-control font-12" value="Ranjan" disabled />

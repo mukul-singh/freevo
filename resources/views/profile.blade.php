@@ -1,5 +1,5 @@
 <div class="col-12 col-sm-10 col-md-9 row nopad center">
-    <div class="col-12 nopad">
+    <div class="col-12 nopad xs-pad-l15">
         <ul class="list-unstyled breadcrumb nopad font-12">
             <li>Home</li>
             <li>></li>
@@ -8,13 +8,13 @@
             <li>{{ $sectionTitle }}</li>
         </ul>
     </div>
-    <div class="col-3 nopad">
+    <div class="col-3 nopad hidden-xs">
         <h3 class="f-heading">My Freevo</h3>
     </div>
-    <div class="col-9 pad-r0">
+    <div class="col-9 pad-r0 hidden-xs">
         <h3 class="f-heading-sm">{{ $sectionTitle }}</h3>
     </div>
-    <div class="col-3 nopad">
+    <div class="col-sm-3 col-md-3 hidden-xs nopad">
         <div class="list-filter">
             <ul class="list-unstyled">
                 <li {{ ($section == 'info') ? 'class=active' : '' }}><a href="{{ BASE_URL }}profile?section=info">Personal Information</a></li>
@@ -31,7 +31,7 @@
             </ul>
         </div>
     </div>
-    <div class="col-9 pad-r0">
+    <div class="col-12 col-sm-9 col-md-9 pad-r0 xs-nopad">
         @section('content')
         @show
     </div>

@@ -5,14 +5,24 @@
             <a href="{{BASE_URL}}"><img src="{{ BASE_URL }}assets/images/icons/logo-main.svg" height="28"></a>
         </div>
         <div class="col-md-8 col-sm-8 nopad hidden-xs">
-            <ul class="list-unstyled list-inline float-right">
-                <li class="list-inline-item"><a href="{{ BASE_URL }}listing">ITEMS AVAILABLE</a></li>
+            <ul class="list-unstyled list-inline nav-links float-right nomar">
+                <li class="list-inline-item dropdown-toggle pointer">ITEMS AVAILABLE</li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}giveaway">GIVEAWAY AN ITEM</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}stories">FREEVO STORIES</a></li>
                 <li class="list-inline-item"><a href="{{ BASE_URL }}profile">PROFILE</a></li>
                 <li class="list-inline-item pointer" data-toggle="modal" data-target="#login-modal">SIGN UP</li>
                 <li class="list-inline-item pointer" data-toggle="modal" data-target="#login-modal">LOGIN</li>
             </ul>
+        </div>
+        <div class="col-12 dropdown-menu row nomar text-right">
+            <?php for ($i = 0; $i < 10; $i++) { ?>
+            <div class="col-1">
+                <a href="{{ BASE_URL }}listing">
+                    <img src="{{ BASE_URL }}assets/images/icons/categories/bedroom.svg" class="img-fluid mar-b5">
+                    <b class="font-12">Bedroom</b>
+                </a>
+            </div>
+            <?php } ?>
         </div>
         <div id="mySidenav" class="sidenav">
             <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" width="12" class="float-right" onclick="closeNav()">
@@ -53,7 +63,7 @@
 <div class="f-section-wrap bg-grey">
     <h2 class="sec-title text-center">Old is New</h2>
     <p class="sec-desc text-center center">Here are the latest freeloved home items near you!</p>
-    <div class="row nomar">
+    <div class="row nomar xs-mar-l-m15 xs-mar-r-m15">
         <?php for($i = 0; $i < 5; $i++) {?>
         <div class="col-6 col-sm-2 col-md-2 f-stories <?= ($i == 0) ? 'offset-md-1 offset-sm-1': '';?>">
             <div class="f-item">
@@ -155,6 +165,7 @@
         <div class="modal-content col-12">
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 story xs-pad-30">
+                    <img src="{{ BASE_URL }}assets/images/icons/close-cancel.svg" data-dismiss="modal" width="12" class="close visible-xs">
                     <img src="{{ BASE_URL }}assets/images/icons/wishlist/wish-pink.png" width="20" class="wish-icon">
                     <h3 class="f-heading">Give and get freeloved furniture from friends & neighbours.</h3>
                     <p>

@@ -42,7 +42,7 @@
                 <li>Help</li>
             </ul>
         </div>
-        <div class="col-6 col-sm-3 col-md-3">
+        <div class="col-6 col-sm-3 col-md-3 xs-pad-r0">
             <ul class="list-unstyled">
                 <li class="mar-b5">
                     <ul class="list-unstyled list-inline">
